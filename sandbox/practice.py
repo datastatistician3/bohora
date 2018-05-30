@@ -58,3 +58,32 @@ make_pizza('medium', 'mushrooms', 'peppers','onions', 'extra cheese')
 import snake_case
 
 snake_case.snake_case("Hi______   _____ There hrllo")
+
+
+lst=[10, 20, 30, 40, 50]
+
+lst[-2:]
+
+lst[1:4] = [15,45,46]
+
+lst
+x=4
+y =6
+print("v=",3,"cm :",x,",",y+4)
+
+lst = [11,18,9,12,23,4,17]
+lost = []
+for idx in range(len(lst)):
+    val = lst[idx]
+    if val > 15:
+        lost.append(val)
+        lst[idx] = 15
+print("modif:",lst,"-lost:",lost)
+
+for idx,val in enumerate(lst):
+    print(idx,val)
+'c'*5
+
+my_dict.items()
+
+'so2m'.isalpha()
