@@ -8,7 +8,7 @@ import re
 def snake_case(x):
     """
     Convert variable names to snake_case. Snake_Case is a variable naming style separatd by '_'
-    :param x: s is an input string (seprated by multiple spaces, underscores or capitalization)
+    :param x: x is an input string (seprated by multiple spaces, underscores or capitalization)
     :return: returns snake_case
     Usage:
         x = "First           Variable"
