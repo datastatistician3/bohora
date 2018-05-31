@@ -5,7 +5,6 @@ Created on Thu May 31 11:23:08 2018
 @author: SBOHORA
 """
 import string
-x = "This is a string. This is a a word. hora?"
 
 def count_words_in_string(x, remove_punctuation = False):
     """
@@ -14,12 +13,18 @@ def count_words_in_string(x, remove_punctuation = False):
     :param remove_punctuation: remove_punctuation is a boolean variable whether to remove punctuation or not
     :return: returns each unique word and its occurrences
     Usage:
+        x = "This is a string. This is a a word. hora?"
         count_words_in_string(x)
         count_words_in_string(x, remove_punctuation=True)
     """
     counts = dict()    
     if remove_punctuation:
         s = ''.join(i for i in x if i not in string.punctuation)
+#        z=''
+#        for i in x:
+#            if i not in string.punctuation:
+#                z += i
+#            z
     else:
         s = x
         
