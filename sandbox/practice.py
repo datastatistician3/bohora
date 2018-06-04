@@ -87,3 +87,80 @@ for idx,val in enumerate(lst):
 my_dict.items()
 
 'so2m'.isalpha()
+
+def swap_case(x):
+    m = []
+    for i in x:
+        if i.islower():
+            m.append(i.upper())
+            mm = ''.join(m)
+        else:
+            m.append(i.lower())
+            mm = ''.join(m)
+    return mm
+
+swap_case('HackerRank.com presents "Pythonist 2".')
+
+
+
+''.join(['b','b',' ','c'])
+
+
+''.join(['h',
+ 'A',
+ 'C',
+ 'K',
+ 'E',
+ 'R',
+ 'r',
+ 'A',
+ 'N',
+ 'K',
+ '.',
+ 'C',
+ 'O',
+ 'M',
+ ' ',
+ 'P',
+ 'R',
+ 'E',
+ 'S',
+ 'E',
+ 'N',
+ 'T',
+ 'S',
+ ' ',
+ '"',
+ 'p',
+ 'Y',
+ 'T',
+ 'H',
+ 'O',
+ 'N',
+ 'I',
+ 'S',
+ 'T',
+ ' ',
+ '2',
+ '"',
+ '.'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
