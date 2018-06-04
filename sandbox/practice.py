@@ -101,66 +101,42 @@ def swap_case(x):
 
 swap_case('HackerRank.com presents "Pythonist 2".')
 
+s = 'GNCHCDCDC'
+s.startswith('CDC')
+
+def count_substring(string, sub_string):
+    sum_count = 0
+    for i in range(len(string)):
+        if string.startswith(sub_string, i):
+            add = 1
+            sum_count += add
+    return sum_count
+
+count_substring(s, 'CDC')  
 
 
-''.join(['b','b',' ','c'])
+n = 24
+if n % 2 is not 0:
+    print("Weird")
+elif n <=5 and n >= 2:
+    print("Not Weird")
+elif n <=20 and 6 >= 2:
+    print("Weird")
+else:
+    print("Not Weird")
+    
+n = int(input().strip())
+check = {True: "Not Weird", False: "Weird"}
 
 
-''.join(['h',
- 'A',
- 'C',
- 'K',
- 'E',
- 'R',
- 'r',
- 'A',
- 'N',
- 'K',
- '.',
- 'C',
- 'O',
- 'M',
- ' ',
- 'P',
- 'R',
- 'E',
- 'S',
- 'E',
- 'N',
- 'T',
- 'S',
- ' ',
- '"',
- 'p',
- 'Y',
- 'T',
- 'H',
- 'O',
- 'N',
- 'I',
- 'S',
- 'T',
- ' ',
- '2',
- '"',
- '.'])
+n = 5
+print("Not Werid" if not n%2 and (n in range(2,6) or n >20) else "Weird")
+
+print("%s", "sdf")
 
 
+print(''.join(map(str,list(range(1,n)))) + str(n))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for i in range(1, n + 1):
+    print(i, end = '')
