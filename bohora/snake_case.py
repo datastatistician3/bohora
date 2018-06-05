@@ -20,6 +20,7 @@ def snake_case(x):
         b = ["First           Variable","HiHello"]
         [snake_case(x) for x in b]
     """
+    
     string = re.findall('_', x)
     if len(string) > 1:
         x = re.sub('_+','',x)

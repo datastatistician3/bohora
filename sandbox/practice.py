@@ -140,3 +140,9 @@ print(''.join(map(str,list(range(1,n)))) + str(n))
 
 for i in range(1, n + 1):
     print(i, end = '')
+
+
+'rotor'[::-1] == 'rotor'
+
+
+['r','r','y'][::3] = [i.upper() for i in ['r','r','y'][::-3]]
