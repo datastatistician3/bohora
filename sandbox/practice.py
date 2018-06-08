@@ -146,3 +146,88 @@ for i in range(1, n + 1):
 
 
 ['r','r','y'][::3] = [i.upper() for i in ['r','r','y'][::-3]]
+
+#String -- immutable
+name = 'Sam'
+name[0] = 'P'
+'P' + name[1:]
+
+
+print("This is a string {}".format('Inserted'))
+print("the {2} {1} {0}".format('fox','brown','quick'))
+
+print("This is a string {r:1.3f}".format(r = 0.235647)) #value:width.precision f
+print(f"This is a string {name}")
+
+
+1 is not 1
+
+[2,3,4].insert
+
+import re
+string = "Important text,      !Comment that could be removed"
+re.sub("!", "", string)
+
+
+def alternate_letter_swap_case(args):
+    return(''.join([args[i].lower() if i % 2 == 0 else args[i].upper() for i in range(len(args))]))
+
+args = "Anthropomorphism"
+alternate_letter_swap_case(args)
+
+args.swapcase()
+
+"som som".capitalize()
+
+' '.join("I am home".split()[::-1])
+
+x = "Mississippi"
+''.join([char*3 for char in x])
+
+
+def print_big(letter):
+    patterns = {1:'  *  ',2:' * * ',3:'*   *',4:'*****',5:'**** ',6:'   * ',7:' *   ',8:'*   * ',9:'*    '}
+    alphabet = {'A':[1,2,4,3,3],'B':[5,3,5,3,5],'C':[4,9,9,9,4],'D':[5,3,3,3,5],'E':[4,9,4,9,4]}
+    for pattern in alphabet[letter.upper()]:
+        print(patterns[pattern])
+
+print_big('e')
+
+#Map
+def square(num):
+    return(num**2)
+    
+my_nums = [2,3,4,5]
+for item in map(square, my_nums): print(item)
+list(map(square, my_nums))
+
+#filter
+def slicer(x):
+    return(x % 2 == 0)
+list(filter(slicer, my_nums))
+
+#Lambda expression/anonymous function
+square = lambda num: num ** 2
+square(2)
+
+list(map(lambda num: num **2, my_nums))
+list(filter(lambda num: num % 2 == 0, my_nums))
+
+names = ['sam','hari','lyam']
+list(map(lambda x: x[0], names))
+
+
+
+#functions
+import string
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    alphaset = set(alphabet)  
+    return alphaset <= set(str1.lower())
+
+ispangram("The quick brown fox jumps over the lazy dog")
+
+
+{1,2,3} <= {2,3,1}
+
+set(string.ascii_lowercase) <= set("The quick brown fox jumps over the lazy dog".lower())
