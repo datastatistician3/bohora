@@ -14,7 +14,7 @@ def nepalese_words_to_number(x):
     :param x: x is an input string
     :return: returns an integer value
     Usage:
-        x = "ek karod paanch hajaar paanch saya paanch"  # 1505
+        x = "ek karod paanch hajaar paanch saya paanch"  # 10005505
         nepalese_words_to_number(x)
     """
     x = x.lower()
