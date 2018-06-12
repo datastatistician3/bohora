@@ -1,1 +1,1 @@
-# bohora: best open hacks on recurring actions
+# bohora: better open hacks on recurring actions
