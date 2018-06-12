@@ -10,9 +10,19 @@ import re
 def nepalese_words_to_number(x):
     """
     This method allows you to translate to integer numerical words spelled in Nepali.
-    Text must be previously cleaned & removed extraneous words or symbols.
+    Text must be previously cleaned & removed extraneous words or symbols.Below is the list of nepalese
+    words used in this function;
+    
+    "aath", "arba", "athara", "athchaalees", "aththais", "athtis", "baais", "barha", "battis", "bayalees",
+    "bis", "chalees", "char", "chaubis", "chaudha", "chauntis", "chawaalees", "chha", "chhabbis", "chhattis",
+    "chhayaalees", "das",     "dui", "eghaara", "ek", "ekchalees", "ekkais", "ekkattis", "hajaar", "karod", 
+    "kharaba", "lakh", "nau", "nil", "paanch", "pachas", "pachchis", "padhna", "paintis", "paitaalees",
+    "pandhra", "sacchaalees", "saitis", "sat", "satra", "sattais", "saya", "shankha", "soonya", "sorha",
+    "teis", "terha", "tettis","tin", "tis", "triyalees", "unanchas", "unantis", "unnais", "unnanchaalis
+    
     :param x: x is an input string
     :return: returns an integer value
+    
     Usage:
         x = "ek karod paanch hajaar paanch saya paanch"  # 10005505
         nepalese_words_to_number(x)
