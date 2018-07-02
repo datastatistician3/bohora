@@ -26,6 +26,33 @@ def to_any_case(x, case = ['screaming_snake_case','all_caps','swap_case','flip_c
         to_any_case(x, case = "proper_snake_case")
         to_any_case(x, case = "none")
         to_any_case(x)
+        
+        to_any_case(x, case = 'screaming_snake_case')
+        'THIS_IS_A_STRANGE_STRING_2'
+        to_any_case(x, case = 'snake_case')
+        'this_is_a_strange_string_2'
+        to_any_case(x, case = 'lower_camel_case')
+        'thisIsAStrangeString2'
+        to_any_case(x, case = 'upper_camel_case')
+        'ThisIsAStrangeString2'
+        to_any_case(x, case = 'upper_lower')
+        'THISisAstrangeSTRING2'
+        to_any_case(x, case = 'lower_upper')
+        'thisISaSTRANGEstring2'
+        to_any_case(x, case = "parsed_case")
+        'this_Is_a_Strange_string_2'
+        to_any_case(x, case = "swap_case")
+        'THIS iS A sTRANGE_STRING 2'
+        to_any_case(x, case = "all_caps")
+        'THIS_IS_A_STRANGE_STRING_2'
+        to_any_case(x, case = "proper_snake_case")
+        'This_Is_A_Strange_String_2'
+        to_any_case(x, case = "none")
+        WARNING: You did not specify the case. Therefore, original string is returned.
+        'this Is a Strange_string 2'
+        to_any_case(x)
+        WARNING: You did not specify the case. Therefore, original string is returned.
+        'this Is a Strange_string 2'
     """
     
     if case == 'snake_case':
