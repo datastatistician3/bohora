@@ -26,3 +26,6 @@ def is_palindrome(s, remove_punctuation=False):
     return (result == d)
 
 print(is_palindrome("Was It A   Rat    I Saw?", remove_punctuation=True))
+print(is_palindrome("taco cat", remove_punctuation=True))
+
+
