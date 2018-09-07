@@ -1,0 +1,38 @@
+site_name: bohora (better open hacks on recurring actions)
+site_url: https://sbohora.github.io/bohora
+site_description: Documentation for `bohora` Python package
+site_author: Som B. Bohora
+
+nav:
+    - Home: index.md
+    - Reference: reference.md
+    - saucpy: 'https://sbohora.github.io/saucpy/'
+
+theme: 
+  name: flatly
+  highlights: true 
+  hljs_languages: 
+    - yaml #cerulean
+
+# Repository
+# repo_name: 'Github'
+repo_url: 'https://github.com/sbohora/bohora'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/sbohora'
+    - type: 'twitter'
+      link: 'https://twitter.com/SomBohora'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/som-b-bohora-a6aab723'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 Som B. Bohora'
+
+markdown_extensions:
+    - toc:
+        permalink: 
+    - admonition
+    - def_list
